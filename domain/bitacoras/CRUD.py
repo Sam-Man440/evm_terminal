@@ -1,5 +1,5 @@
 from db.ConnB import Conn
-from domain.bitacoras.Clase import Bitacora
+from domain.bitacoras.Bitacoras import Bitacora
 from mysql.connector import Error
 
 from utils.log import log
