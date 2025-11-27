@@ -3,7 +3,7 @@
 import interface.usuarios.Menu as _Usuarios
 from interface.usuarios import fUsuarios
 
-import interface.bitacoras.Menu as _Bitacoras
+# import interface.bitacoras.Menu as _Bitacoras
 
 import interface.vehiculos.Menu as _Vehiculos
 #from controllers import fVehiculo
