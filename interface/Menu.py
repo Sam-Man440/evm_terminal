@@ -1,0 +1,10 @@
+def pricipal():
+    print("    SISTEMA EVM")
+    print("    1. Bitacoras")
+    print("    2. Vehiculos")
+    print("    3. Usuarios")
+    print("    4. Mantenimiento")
+    print("    5. Observaciones")
+    print("     . ...")
+    print("    9. Salir")
+    print()
