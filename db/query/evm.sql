@@ -8,7 +8,6 @@ CREATE TABLE tipo_licencia (
     descripcion VARCHAR(30) NOT NULL
 );
 
-
 CREATE TABLE marca (
     codigo VARCHAR(4) PRIMARY KEY,
     nombre VARCHAR(30) NOT NULL
@@ -205,7 +204,7 @@ CREATE TABLE mantenimiento_bitacora (
     FOREIGN KEY (bitacora) REFERENCES bitacora(numero)
 );
 
-#MOPDIFICACIONES A LA TABLA LICENCIA PARA CAMBIO DE TIPO DE LICENCIA 
+-- MOPDIFICACIONES A LA TABLA LICENCIA PARA CAMBIO DE TIPO DE LICENCIA 
 SET FOREIGN_KEY_CHECKS = 0;
 
 ALTER TABLE tipo_licencia ADD COLUMN numero INT;
@@ -228,7 +227,7 @@ DROP COLUMN tipo_licencia;
 ALTER TABLE licencia 
 CHANGE COLUMN tipo_licencia_nuevo tipo_licencia INT;
 
-#MOPDIFICACIONES A LA TABLA VEHICULO PARA CAMBIO DE TIPO DE LICENCIA 
+-- MOPDIFICACIONES A LA TABLA VEHICULO PARA CAMBIO DE TIPO DE LICENCIA 
 ALTER TABLE vehiculo 
 ADD COLUMN licencia_requerida_nuevo INT;
 
@@ -245,7 +244,7 @@ DROP COLUMN licencia_requerida;
 ALTER TABLE vehiculo 
 CHANGE COLUMN licencia_requerida_nuevo licencia_requerida INT;
 
-#CAMBIO TABLA `tipo_licencia`
+-- CAMBIO TABLA `tipo_licencia`
 ALTER TABLE tipo_licencia 
 DROP PRIMARY KEY;
 
